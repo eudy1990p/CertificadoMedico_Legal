@@ -1,0 +1,469 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package exampleprint2;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.font.TextAttribute;
+import java.awt.print.PageFormat;
+import java.awt.print.Printable;
+import static java.awt.print.Printable.NO_SUCH_PAGE;
+import static java.awt.print.Printable.PAGE_EXISTS;
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
+import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Eudy
+ */
+public class View4 extends javax.swing.JFrame implements Printable{
+
+    /**
+     * Creates new form View3
+     */
+    public View4() {
+        initComponents();
+        this.ponerIconoJFrame();
+        Font font1 = this.jLabel30.getFont();
+        Map attributes1 = font1.getAttributes();
+        attributes1.put(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
+        this.jLabel30.setFont(font1.deriveFont(attributes1));
+        
+        Font font = this.jLabel31.getFont();
+        Map attributes = font.getAttributes();
+        attributes.put(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
+        this.jLabel31.setFont(font.deriveFont(attributes));
+        
+        this.ScaleImage();
+    }
+    
+      public void ponerIconoJFrame(){
+       ImageIcon imagen = new ImageIcon(getClass().getResource("/img/iconoapp.jpg")); 
+       this.setIconImage(imagen.getImage());
+    }
+    
+    public void createPrint(){
+        this.getContentPane().setBackground(Color.white);
+        PrinterJob printJob = PrinterJob.getPrinterJob();
+        printJob.setPrintable((Printable) this);
+        
+        if(printJob.printDialog()){
+            try {
+                printJob.print();
+                this.dispose();
+            } catch (PrinterException ex) {
+                Logger.getLogger(ViewPrint.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+    
+    public void ScaleImage(){
+        ImageIcon imagen = new ImageIcon(getClass().getResource("/img/ministeri.jpg")); 
+        Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(this.jLabel1.getWidth(),this.jLabel1.getHeight(),Image.SCALE_SMOOTH));
+        //Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(this.jLabel1.getWidth(),this.jLabel1.getHeight(),Image.SCALE_DEFAULT)); 
+        this.jLabel1.setIcon(icono);
+        
+        ImageIcon imagen1 = new ImageIcon(getClass().getResource("/img/2.jpg")); 
+        Icon icono1 = new ImageIcon(imagen1.getImage().getScaledInstance(this.jLabel45.getWidth(),this.jLabel45.getHeight(),Image.SCALE_DEFAULT));
+        //Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(this.jLabel1.getWidth(),this.jLabel1.getHeight(),Image.SCALE_DEFAULT)); 
+        this.jLabel45.setIcon(icono1);
+        
+        ImageIcon imagen3 = new ImageIcon(getClass().getResource("/img/fondo4.gif")); 
+        Icon icono3 = new ImageIcon(imagen3.getImage().getScaledInstance(this.jLabel11.getWidth(),this.jLabel11.getHeight(),Image.SCALE_DEFAULT));
+        this.jLabel11.setIcon(icono3);
+        
+        ImageIcon imagen2 = new ImageIcon(getClass().getResource("/img/fondo3.gif")); 
+        Icon icono2 = new ImageIcon(imagen2.getImage().getScaledInstance(this.jLabel17.getWidth(),this.jLabel17.getHeight(),Image.SCALE_DEFAULT));
+        //Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(this.jLabel1.getWidth(),this.jLabel1.getHeight(),Image.SCALE_DEFAULT)); 
+        this.jLabel17.setIcon(icono2);
+        
+          ImageIcon imagen4 = new ImageIcon(getClass().getResource("/img/obalado.gif")); 
+        Icon icono4 = new ImageIcon(imagen4.getImage().getScaledInstance(this.jLabel23.getWidth(),this.jLabel23.getHeight(),Image.SCALE_SMOOTH));
+        this.jLabel23.setIcon(icono4);
+    }
+    
+       public int print(Graphics g, PageFormat pageFormat, int pageIndex)throws PrinterException {
+    
+        if(pageIndex == 0){
+            Graphics2D g2d = (Graphics2D) g;
+            g2d.translate(pageFormat.getImageableX()+2, pageFormat.getImageableY()+1);
+            g2d.scale(0.75,0.84);
+            this.printAll(g);
+            return PAGE_EXISTS;
+        }else{
+            return NO_SUCH_PAGE;
+        }
+    }
+       
+       public static void main0(String[] a){
+            View3 v = new View3();
+            v.setVisible(true);
+            v.createPrint();
+       }
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
+        setUndecorated(true);
+        setSize(new java.awt.Dimension(780, 885));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel5.setText("Yo,");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 150, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel6.setText(" EDWIN JESUS PEÑA URBAEZ");
+        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 149, 380, -1));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel7.setText(" C/ RESP. GRAL. RODRIGUEZ REYES N. 62 P/A ARROTO HONDO");
+        jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 580, -1));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel8.setText("con     exequatur     número ");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("271-92");
+        jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 80, -1));
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel10.setText(" juramentado   como   Médico   Legista,");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel12.setText(",    CERTIFICO");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel13.setText("que,      actuando       a        requerimiento     de");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel15.setText("de la Procuraduria Fiscal del D.N.");
+        jLabel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 193, 400, -1));
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel18.setText(" ,  he   practicado   un   exámen   físico   a");
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, -1, 20));
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel19.setText(",");
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 270, -1, -1));
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel20.setText("DENCY JUNIOR HERNANDEZ CORDERO");
+        jLabel20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 216, 400, -1));
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel21.setText(", cédula");
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, -1, 30));
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel22.setText("402-2827284-1");
+        jLabel22.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 215, 100, 20));
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText("13");
+        jLabel24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(646, 240, 20, -1));
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel25.setText(", domiciliado en");
+        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 217, -1, -1));
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel26.setText("quien   actualmente   se   encuentra   en    estado  ");
+        getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 265, -1, -1));
+
+        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel27.setText("AMBULATORIO");
+        jLabel27.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 265, 290, -1));
+
+        jLabel28.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel28.setText("Costatando     mediante     el    interrogatorio,    como    por    el    exámen    físico    que   presenta : ");
+        getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 285, -1, -1));
+
+        jLabel30.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel30.setText("CONCLUSIONES :");
+        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 690, -1, -1));
+
+        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel31.setText("Estas Lesiones Curaran dentro de un Periodo 2 a 3 Meses");
+        jLabel31.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 690, 600, -1));
+
+        jLabel32.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        jLabel32.setText("(  Las     conclusiones       estan      sujetas     a       cualquier       tipo      de      complicación       que      se     presente");
+        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 705, 710, -1));
+
+        jLabel33.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        jLabel33.setText("dentro    de    la     evolución    del     período     de    curación      establecido).");
+        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 722, -1, -1));
+
+        jLabel34.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        jLabel34.setText("EXPEDIDO       en     la     ciudad     de     Santo     Domingo      de     Guzmán,      Distrito     Nacional,    capital     de     la   ");
+        getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 740, 720, -1));
+
+        jLabel35.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        jLabel35.setText("República     Dominicana    de     fecha ");
+        getContentPane().add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 759, -1, -1));
+
+        jLabel36.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        jLabel36.setText("a las 15:56:41 horas  .");
+        getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 777, -1, -1));
+
+        jLabel37.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel37.setText("Martes 29 del mes de Marzo del año dos mil dieciseis (2016),");
+        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 759, 510, -1));
+
+        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel4.setName(""); // NOI18N
+        jPanel4.setPreferredSize(new java.awt.Dimension(250, 2));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 250, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 2, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 860, -1, -1));
+
+        jLabel39.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel39.setText("Médico Legista Actuante");
+        getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 870, -1, -1));
+
+        jLabel40.setFont(new java.awt.Font("Serif", 2, 12)); // NOI18N
+        jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel40.setText("<html>\n<head></head>\n<body>\nHOMOLOGAMOS DIAGNOSTICO DEL HOSPITAL REGIONAL GRAL. DR. MARCELINO VÉLEZ SANTANA DE DR. RAFAEL DE LOS SANTOS EXEQUATUR NO. 00-00, DE FECHA 17/07/2015 :  \n1.- FRACTURA DE CLAVICULA DERECHA. 2.- FRACTURA DE CODO IZQUIERDO. 3.- FRACTURA CON EDEMA CRANEAL. \n4.- TRAUMA LUMBAR. RADIOGRAFICAMENTE SE OBSERVAN LESIONES OSEAS EN CLVICULA DERECHA Y CODO IZQUIERDO.\n</body>\n</html>");
+        jLabel40.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel40.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel40.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel40.setPreferredSize(new java.awt.Dimension(2282, 19));
+        getContentPane().add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 321, 550, 358));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ministeri.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 60, 80));
+
+        jLabel44.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel44.setText("CERTIFICADO MEDICO LEGAL");
+        getContentPane().add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, -1, -1));
+
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/2.jpg"))); // NOI18N
+        jLabel45.setText("jLabel45");
+        getContentPane().add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 22, 140, 70));
+
+        jLabel46.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel46.setText(", Edad");
+        getContentPane().add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 240, -1, -1));
+
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 730, 180));
+
+        jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 730, 360));
+
+        jLabel16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 688, 730, 50));
+
+        jLabel43.setText("jLabel43");
+        jLabel43.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 160, 110));
+
+        jLabel42.setText("jLabel42");
+        jLabel42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 160, 110));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo3.gif"))); // NOI18N
+        jLabel17.setText("jLabel17");
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 395, 690, 240));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4.gif"))); // NOI18N
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 580, 150));
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("666-601");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, 60, 20));
+
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel3.setText("Numero : ");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 82, -1, -1));
+
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/obalado.gif"))); // NOI18N
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 180, 40));
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    /**
+     * @param args the command line arguments
+     */
+    
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel4;
+    // End of variables declaration//GEN-END:variables
+
+public void setImage1(String path1,String path2,String path3){
+        //this.jLabel29.setText("");
+       // this.ScaleImage(this.jLabel29,path1);
+        this.jLabel42.setText("");
+        this.ScaleImage(this.jLabel42,path2);
+        this.jLabel43.setText("");
+        this.ScaleImage(this.jLabel43,path3);
+    }
+public void setTexts(String v1,String v2,String v3,String v4,String v6,String v7,String v9,String v10,String v11,String v12,String v13,String v14,String v15){
+       this.jLabel4.setText(v1);this.jLabel6.setText(v2);this.jLabel9.setText(v3);
+       this.jLabel15.setText(v4);
+       //this.jLabel17.setText(v5);
+       this.jLabel20.setText(v6);
+       this.jLabel22.setText(v7);
+      //this.jLabel23.setText(v8);
+      this.jLabel24.setText(v9);
+       this.jLabel7.setText(v10);this.jLabel27.setText(v11);this.jLabel31.setText(v12);
+       this.jLabel37.setText(v13);
+       this.jLabel36.setText(v15);
+       this.jLabel40.setText(v14);
+}
+
+
+public void ScaleImage(JLabel jLabel,String path){
+        try{
+            ImageIcon imagen = new ImageIcon(path); 
+            Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(jLabel.getWidth(),jLabel.getHeight(),Image.SCALE_DEFAULT));
+            //Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(this.jLabel1.getWidth(),this.jLabel1.getHeight(),Image.SCALE_DEFAULT)); 
+            jLabel.setIcon(icono); 
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(this, "Error "+e);
+        }
+    }
+
+}
