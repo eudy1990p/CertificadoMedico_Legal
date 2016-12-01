@@ -189,6 +189,7 @@ public class AdminTheme extends javax.swing.JFrame {
     
     
     public void printIntoTheme(){
+         if(!this.validarVacios()){
         View4 v = new View4();
         v.setImage1(pathImagen1, pathImagen2, pathImagen3);
         String body = organizarTextoBody(this.jTextArea1.getText());
@@ -198,6 +199,7 @@ public class AdminTheme extends javax.swing.JFrame {
         v.setTexts(this.jTextField1.getText().toString(), this.jTextField2.getText().toString(), this.jTextField3.getText().toString(), this.jTextField4.getText().toString(), this.jTextField6.getText().toString(), this.jTextField7.getText().toString(), this.jTextField9.getText().toString(), this.jTextField10.getText().toString(), this.jTextField11.getText().toString(), this.jTextField12.getText().toString(), this.jTextField13.getText().toString(), body,this.jTextField5.getText().toString());
         v.setVisible(true);
         v.createPrint();
+         }
     }
 
     /**
@@ -529,7 +531,7 @@ public class AdminTheme extends javax.swing.JFrame {
         this.jTextField7.setText("");this.jTextField9.setText("");
         this.jTextField10.setText("");this.jTextField11.setText("");this.jTextField12.setText("");
         this.jTextField13.setText("");this.jTextArea1.setText("");
-        
+        this.jTextField5.setText("");
        // this.jLabel1.setIcon(null);
         //this.jLabel1.setText("Click para agregar imagen1");
         this.jLabel3.setIcon(null);        this.jLabel3.setText("Click para agregar imagen3");

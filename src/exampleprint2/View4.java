@@ -351,11 +351,9 @@ public class View4 extends javax.swing.JFrame implements Printable{
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 688, 730, 50));
 
         jLabel43.setText("jLabel43");
-        jLabel43.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 160, 110));
 
         jLabel42.setText("jLabel42");
-        jLabel42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 160, 110));
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo3.gif"))); // NOI18N
