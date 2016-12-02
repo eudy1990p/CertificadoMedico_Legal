@@ -173,63 +173,63 @@ public class View4 extends javax.swing.JFrame implements Printable{
         setSize(new java.awt.Dimension(780, 885));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel5.setText("Yo,");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 150, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel6.setText(" EDWIN JESUS PEÑA URBAEZ");
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 149, 380, -1));
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel7.setText(" C/ RESP. GRAL. RODRIGUEZ REYES N. 62 P/A ARROTO HONDO");
         jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 580, -1));
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel8.setText("con     exequatur     número ");
+        jLabel8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel8.setText("con   exequatur   número ");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel9.setText("271-92");
         jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 80, -1));
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel10.setText(" juramentado   como   Médico   Legista,");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, -1, -1));
+        jLabel10.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel10.setText(" juramentado  como  Médico  Legista,");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(444, 150, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel12.setText(",    CERTIFICO");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel13.setText("que,      actuando       a        requerimiento     de");
+        jLabel13.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel13.setText("que,    actuando      a       requerimiento     de");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, -1, -1));
 
-        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel15.setText("de la Procuraduria Fiscal del D.N.");
         jLabel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 193, 400, -1));
 
-        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel18.setText(" ,  he   practicado   un   exámen   físico   a");
+        jLabel18.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel18.setText(" , he  practicado   un   exámen  físico  a");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, -1, 20));
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel19.setText(",");
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 270, -1, -1));
 
-        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel20.setText("DENCY JUNIOR HERNANDEZ CORDERO");
         jLabel20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 216, 400, -1));
 
-        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel21.setText(", cédula");
+        jLabel21.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel21.setText(",cédula");
         getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, -1, 30));
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -241,58 +241,58 @@ public class View4 extends javax.swing.JFrame implements Printable{
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel24.setText("13");
         jLabel24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(646, 240, 20, -1));
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 240, 20, -1));
 
-        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel25.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel25.setText(", domiciliado en");
         getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 217, -1, -1));
 
-        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel26.setText("quien   actualmente   se   encuentra   en    estado  ");
+        jLabel26.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel26.setText("quien  actualmente  se  encuentra  en   estado  ");
         getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 265, -1, -1));
 
-        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel27.setText("AMBULATORIO");
         jLabel27.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 265, 290, -1));
 
-        jLabel28.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel28.setText("Costatando     mediante     el    interrogatorio,    como    por    el    exámen    físico    que   presenta : ");
+        jLabel28.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel28.setText("Costatando  mediante  el interrogatorio,  como  por  el  exámen   físico    que   presenta : ");
         getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 285, -1, -1));
 
-        jLabel30.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel30.setText("CONCLUSIONES :");
+        jLabel30.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel30.setText("CONCLUSIONES:");
         getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 690, -1, -1));
 
-        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel31.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel31.setText("Estas Lesiones Curaran dentro de un Periodo 2 a 3 Meses");
         jLabel31.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 690, 600, -1));
+        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 690, 590, -1));
 
-        jLabel32.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        jLabel32.setText("(  Las     conclusiones       estan      sujetas     a       cualquier       tipo      de      complicación       que      se     presente");
+        jLabel32.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel32.setText("(  Las     conclusiones       estan      sujetas     a       cualquier      tipo     de   complicación    que  se   presente");
         getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 705, 710, -1));
 
-        jLabel33.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        jLabel33.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel33.setText("dentro    de    la     evolución    del     período     de    curación      establecido).");
         getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 722, -1, -1));
 
-        jLabel34.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        jLabel34.setText("EXPEDIDO       en     la     ciudad     de     Santo     Domingo      de     Guzmán,      Distrito     Nacional,    capital     de     la   ");
+        jLabel34.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel34.setText("EXPEDIDO     en    la    ciudad    de   Santo     Domingo     de    Guzmán,     Distrito     Nacional,    capital     de     la   ");
         getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 740, 720, -1));
 
-        jLabel35.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        jLabel35.setText("República     Dominicana    de     fecha ");
+        jLabel35.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel35.setText("República    Dominicana   de    fecha ");
         getContentPane().add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 759, -1, -1));
 
-        jLabel36.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        jLabel36.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel36.setText("a las 15:56:41 horas  .");
         getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 777, -1, -1));
 
-        jLabel37.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel37.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel37.setText("Martes 29 del mes de Marzo del año dos mil dieciseis (2016),");
-        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 759, 510, -1));
+        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 760, 480, -1));
 
         jPanel4.setBackground(new java.awt.Color(0, 0, 0));
         jPanel4.setName(""); // NOI18N
@@ -311,7 +311,7 @@ public class View4 extends javax.swing.JFrame implements Printable{
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 860, -1, -1));
 
-        jLabel39.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel39.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel39.setText("Médico Legista Actuante");
         getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 870, -1, -1));
@@ -327,7 +327,7 @@ public class View4 extends javax.swing.JFrame implements Printable{
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ministeri.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 60, 80));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 90, 90));
 
         jLabel44.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel44.setText("CERTIFICADO MEDICO LEGAL");
@@ -335,9 +335,9 @@ public class View4 extends javax.swing.JFrame implements Printable{
 
         jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/2.jpg"))); // NOI18N
         jLabel45.setText("jLabel45");
-        getContentPane().add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 22, 140, 70));
+        getContentPane().add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 22, 170, 80));
 
-        jLabel46.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel46.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel46.setText(", Edad");
         getContentPane().add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 240, -1, -1));
 
