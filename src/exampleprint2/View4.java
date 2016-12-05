@@ -279,7 +279,7 @@ public class View4 extends javax.swing.JFrame implements Printable{
         getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 722, -1, -1));
 
         jLabel34.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel34.setText("EXPEDIDO     en    la    ciudad    de   Santo     Domingo     de    Guzmán,     Distrito     Nacional,    capital     de     la   ");
+        jLabel34.setText("EXPEDIDO     en    la    ciudad    de   Santo     Domingo     de    Guzmán,     Distrito    Nacional,   capital   de  la   ");
         getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 740, 720, -1));
 
         jLabel35.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
