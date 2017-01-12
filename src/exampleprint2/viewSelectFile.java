@@ -82,8 +82,8 @@ public class viewSelectFile extends javax.swing.JFrame {
             File file = fileChooser.getSelectedFile();
             String path = file.getAbsolutePath();
             String name = file.getName();
-            this.copyFile(path, name);
-   
+           this.copyFile(path, name);
+            
         }else if(command.equals(JFileChooser.CANCEL_SELECTION)){
             this.dispose();
         }
